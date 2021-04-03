@@ -26,6 +26,7 @@ public class SelectionSortDemo {
 
   // selection sort demo - Java Tutor visualiation
   public static void selectionSort(int[] arr) {
+    
     // outer loop index i starts from index 0 to the array length - 2
     for (int i = 0; i < arr.length - 1; i++) {
 
@@ -37,7 +38,7 @@ public class SelectionSortDemo {
           minIndex = j;
         }
       }
-
+      
       // swaps the value   
       int temp = arr[i];
       arr[i] = arr[minIndex];

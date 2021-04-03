@@ -15,11 +15,11 @@ public class InsertionSort {
 
       0   1   2   3   4   <-- index
       10  5   3   7   2   <-- elements in the array
-      10                  <-- sorted part
-          i               <-- outer loop - unsorted 
-      j                   <-- inner loop - possible index 
+      3  5   10             <-- sorted part
+              i           <-- outer loop - unsorted 
+      j                  <-- inner loop - possible index 
 
-    temp = 5
+    temp = 3
   */
 
   public static void insertionSort(int[] arr) {
@@ -42,17 +42,12 @@ public class InsertionSort {
       int j = i - 1;
       while (j >= 0 && arr[j] > temp) // * Conditions are evaluated left to right.
       { 
-        arr[j+1] = arr[j];
+        arr[j+1] = arr[j]; //move large to the right
         j--;
       } 
       arr[j+1] = temp;
     }
-  
-   
   }
-
-
-  
 
   public static void main(String[] args) {
     int[] arr1 = { 10, 5, 3, 7, 2 };
@@ -60,9 +55,5 @@ public class InsertionSort {
     insertionSort(arr1);
     System.out.println(Arrays.toString(arr1));
   }
-
-
-
-
 
 }

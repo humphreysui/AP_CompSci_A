@@ -21,6 +21,7 @@ public class Student {
   public void changeAge(int age) {
     this.age = age;
   }
+
   public static void main(String[] args) {
     
     Student s1 = new Student(1, "Ada", 10);
@@ -31,21 +32,24 @@ public class Student {
     Student s6 = new Student(6, "Faye", 15);
 
     // add object to arrayList
+    /*
     ArrayList<Student> studentInfoList = new ArrayList<Student>();
     studentInfoList.add(s1);
     studentInfoList.add(s2);
     studentInfoList.add(s3);
     System.out.println(studentInfoList);
+    */
 
     // you can add object to 2D arrays
     Student[][] studentMatrix = { { s1, s2 }, { s3, s4 }, { s5, s6 } };
+    
     for (Student[] roster : studentMatrix) {
       for (Student student : roster) {
-        student.changeAge(18);
+        student.age = 18;
       }
     }
     System.out.println(Arrays.deepToString(studentMatrix));
-
+    
     
   }
 }

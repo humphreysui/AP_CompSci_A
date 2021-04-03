@@ -47,9 +47,6 @@ public class RecursionDemo {
       return n*factorial(n-1);
     }
   }
-/*
-
-*/
 
   /*
    * Stack: 
@@ -83,7 +80,7 @@ public class RecursionDemo {
     }
    }
   
-  //
+  // extract digits in reverse order
   public static void revDigs(int n)
   {
     System.out.print(n % 10); //rightmost digit
@@ -93,12 +90,19 @@ public class RecursionDemo {
 
   public static void main(String[] args) {
     
-    /* System.out.println("Enter list of words, one per line.");
+    // stackWords() 
+    /* 
+    System.out.println("Enter list of words, one per line.");
     System.out.println("Final word should be a period (.)");
-    stackWords(); */
+    stackWords(); 
+    */
 
+    //factorial
     System.out.println(factorial(4));
+
+    // fibonacci
     System.out.println(fibonacci(6));
+    
     revDigs(147);
 
   }
