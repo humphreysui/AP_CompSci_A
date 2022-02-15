@@ -3,7 +3,9 @@ package ArrayListStuff;
 import java.util.*;
 
 /*
-  In this question,you are asked to write a constructor for a class called Digits. This constructor takes an integer number as its argument and divides it up into its digits and puts the digits into an ArrayList. For example, new Digits(154) creates an ArrayList with the digits [1, 5, 4].
+  In this question,you are asked to write a constructor for a class called Digits. 
+  This constructor takes an integer number as its argument and divides it up into its digits and puts the digits into an ArrayList. 
+  For example, new Digits(154) creates an ArrayList with the digits [1, 5, 4].
 */
 
 public class Digits {
